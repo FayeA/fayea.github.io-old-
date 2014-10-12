@@ -37,8 +37,6 @@ h1{
 	font-size: 235%;
 	font-weight: bold;
 	margin-top:0px;
-
-
 }
 
 
@@ -48,10 +46,27 @@ ul#navigation{
 	font-weight: bold;
 }
 
-a:link{
+a#navigation:link, a#navigation:visited{
+	color: #669900;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+a#navigation:hover{
+	color: #669900;
+	text-decoration: underline;
+}
+
+a#home:link, a#home:visited, a#home:active{
 	color: #669900;
 	text-decoration: underline;
 	font-weight: bold;
+	text-decoration:none;
+}
+
+a#home:hover{
+	color: #669900;
+	text-decoration: underline;
 }
 
 ul#footer{
@@ -64,6 +79,12 @@ hr{
 	border-color: #669900;
 	border: 0;
 	border-top: 1px solid;
+}
+
+pre{
+	background-color: #EOFFFF;
+	font-size==: 85%;
+
 }
 
 

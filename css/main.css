@@ -46,13 +46,13 @@ ul#navigation{
 	font-weight: bold;
 }
 
-a#navigation:link, a#navigation:visited{
+a#navigation:link, a#navigation:visited, a#footer:link, a#footer:visited{
 	color: #669900;
 	font-weight: bold;
 	text-decoration: none;
 }
 
-a#navigation:hover{
+a#navigation:hover, a#footer:hover{
 	color: #669900;
 	text-decoration: underline;
 }

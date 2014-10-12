@@ -136,7 +136,9 @@ Computer Screen (min width 780 px)
 
 	sidebar{
 		text-align: center;
-
+		width: 90%;
+		margin-left: 5%;
+		margin-right:5%;
 	}
 	
 	ul#navigation, ul#footer{
@@ -148,6 +150,9 @@ Computer Screen (min width 780 px)
 		border-top-style: solid;
 		border-top-width: 2px;
 		border-top-color: #669900;
+		width: 90%;
+		margin-left: 5%;
+		margin-right: 5%;
 	}
 	
 

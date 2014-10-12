@@ -1,37 +1,30 @@
 @charset "UTF-8";
 
+/*****************************************************
+                   Base Styles
+******************************************************/
 
+/**********************************
+             Body
+**********************************/
 body {
 	background: #ffffff;
 	color: #000000;
 	font: 100% "Arial", sans-serif;
-	height:100%;
-	width:80%;
-	margin-left: 10%;
-	margin-right: 10%;
-	margin-top: 35px;
-
 }
+
+
+/**********************************
+             Sidebar
+**********************************/
 
 sidebar{
-	height: 100%;
-	width: 250px;
-	float:left;
 	color: #669900;
-	text-align: right;
+	border-bottom-style: solid;
+	border-bottom-width: 2px;
+	border-bottom-color: #669900;
 
 }
-
-
-
-article{
-	clear: right;
-	margin-left: 285px;
-	width: 500px;
-
-}
-
-
 
 h1{
 	font-size: 235%;
@@ -47,7 +40,7 @@ ul#navigation{
 }
 
 a#navigation:link, a#navigation:visited, a#footer:link, a#footer:visited{
-	color: #669900;
+	color: #ff5050;
 	font-weight: bold;
 	text-decoration: none;
 }
@@ -71,7 +64,7 @@ a#home:hover{
 
 ul#footer{
 	list-style-type: none;
-	font-size: 90%;
+	font-size: 80%;
 	font-weight: bold;
 }
 
@@ -81,12 +74,81 @@ hr{
 	border-top: 1px solid;
 }
 
+
+/**********************************
+             Content
+**********************************/
+
+article{
+	font: 100% "Arial", sans-serif;
+	color: #000000;
+}
+
 pre{
-	background-color: #EOFFFF;
-	font-size==: 85%;
+	background-color: #ffff99;
+	font-size: 85%;
+	padding: 5px;
 
 }
 
 
+/*****************************************************
+                   Begin media queries
+******************************************************/
 
 
+/**********************************
+Computer Screen (min width 780 px)
+**********************************/
+@media only screen and (min-width:780px){
+
+	body {
+		height:100%;
+		width:80%;
+		margin-left: 10%;
+		margin-right: 10%;
+		margin-top: 35px;
+	}
+
+	sidebar{
+		height: 100%;
+		width: 240px;
+		float:left;
+		text-align: right;
+		
+	}
+
+	article{
+		clear: right;
+		margin-left: 280px;
+		width: 500px;
+	}
+}
+
+/**********************************
+	Tablets(min width: 480 px)
+**********************************/
+@media only screen and (min-width: 220px) and (max-width: 779px){
+
+	body {
+		margin-top: 20px;
+	}
+
+	sidebar{
+		text-align: center;
+
+	}
+	
+	ul#navigation, ul#footer{
+	padding-left: 0;
+	}
+	
+	
+	article{
+		border-top-style: solid;
+		border-top-width: 2px;
+		border-top-color: #669900;
+	}
+	
+
+}

@@ -231,9 +231,7 @@ Computer Screen (min width 580 px)
 
 	div#sidebar{
 		text-align: center;
-		width: 90%;
-		margin-left: 5%;
-		margin-right:5%;
+		width: 100%;
 		background-color: white;
 		background-image: url("images/light_wool.png");  /* Background pattern from subtlepatterns.com */
 		padding: 5px;
@@ -245,9 +243,7 @@ Computer Screen (min width 580 px)
 	
 	div#footer{
 		text-align: center;
-		width: 90%;
-		margin-left: 5%;
-		margin-right:5%;
+		width: 100%;
 		background-color: white;
 		background-image: url("images/light_wool.png");  /* Background pattern from subtlepatterns.com */
 		padding: 5px;

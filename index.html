@@ -1,17 +1,20 @@
 ---
 layout: default
-title: Welcome
+title: FayeA - Blog/Articles
 ---
 
 <article>
 
-		<h2>Hello there, I'm Faye!</h2>
-			<p>I work as a clinical data manager (and loving it!) and seriously enjoying learning data science from the <a href="https://www.coursera.org/specialization/jhudatascience/1">Coursera JHU Data Science courses</a> (as in seriously, you should check it out!).</p>
-			<p>Doing all those assignments in the Data Science courses (read: lots of R programming!) rekindled my love for coding and webpage designing and blogging. And that's why this website came about! You can see my projects on my <a href="http://github.com/FayeA">github</a>.</p>
-			<p>From time to time, I look at beautiful photographs on flickr. And sometimes I photos too and try to make them look beautiful. The photos that I think make the cut, I post on <a href="http://flickr.com/feiocious">flickr</a>.</p>
-			<p>I've also been trying to write more, as I find that it's a great brain exercise (fewer doh! moments!).</p>
-			<p>I hope that you'll see something helpful on this website :)</p>
-			<p>Okay, ciao for now!</p>
+  <h2>Blog/Articles</h2>
+  <ul>
+    {% for post in site.posts %}
+      <li>
+        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+      </li>
+    {% endfor %}
+  </ul>
 
+  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
 
 </article>

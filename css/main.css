@@ -36,7 +36,7 @@ div#footer{
 h1#sitetitle{
 	font-size: 150%;
 	font-weight: bold;
-	font-family: 'Lucida Sans', 'Lucida Sans Unicode', sans-serif;
+	font-family: 'Lucida Sans', 'Lucida Sans Unicode', serif;
 }
 
 
@@ -44,7 +44,7 @@ ul#navigation{
 	list-style-type: none;
 	font-size: 90%;
 	font-style: italic;
-	font-family: 'Lucida Sans', 'Lucida Sans Unicode', sans-serif;
+	font-family: 'Lucida Sans', 'Lucida Sans Unicode', serif;
 }
 
 ul#navigation, ul#footer, ul#socialmedia{
@@ -83,7 +83,7 @@ ul#footer{
 	list-style-type: none;
 	font-size: 80%;
 	color: #eeeeee;
-	font-family: 'Lucida Sans', 'Lucida Sans Unicode', sans-serif;
+	font-family: 'Lucida Sans', 'Lucida Sans Unicode', serif;
 	font-style: italic;
 }
 
@@ -95,7 +95,7 @@ ul#footer{
 **********************************/
 
 div#article{
-	font-family: 'Lucida Sans', 'Lucida Sans Unicode', sans-serif;
+	font-family: 'Lucida Sans', 'Lucida Sans Unicode', serif;
 	color: #333333;
 
 }

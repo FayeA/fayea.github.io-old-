@@ -4,17 +4,25 @@ title: FayeA - Blog/Articles
 ---
 
 <article>
+  
+	<h2>Latest Post</h2>
+	{% for post in site.posts limit:1 %}
+		<h3>{{ post.title }}</h3>
+		<p class="post-meta">{{ post.date | date: "%b %-d, %Y" }}{% if post.author %} | {{ post.author }}{% endif %}{% if post.meta %} | {{ post.meta }}{% endif %}</p>
+		{{ post.content }}	
+	{% endfor %}
+	
+	
+	<h2>Recent Posts</h2>
+		<ul>
+			{% for post in site.posts % offset:1 limit:3 %}
+			<li>
+				<span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+				<a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+			</li>
+			{% endfor %}
+		</ul>
 
-  <h2>Blog/Articles</h2>
-  <ul>
-    {% for post in site.posts %}
-      <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-      </li>
-    {% endfor %}
-  </ul>
-
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
+	<p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
 
 </article>

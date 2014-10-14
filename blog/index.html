@@ -1,0 +1,30 @@
+---
+layout: default
+title: FayeA - Blog/Articles
+---
+
+
+
+  <h2>Blog/Articles</h2>
+	  <ul>
+		{% for post in site.posts %}
+		  <li>
+			<span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+			  <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+		  </li>
+		{% endfor %}
+	  </ul>
+	<br/>
+	<br/>
+	<br/>
+	<br/>
+	<br/>
+	<br/>
+	<br/>
+	<br/>
+	<br/>
+	<br/>
+	<br/>
+  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
+
+

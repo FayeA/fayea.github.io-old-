@@ -3,7 +3,7 @@ layout: default
 title: FayeA - Blog/Articles
 ---
 
-<article>
+
   
 	<h2>Latest Post</h2>
 	{% for post in site.posts limit:1 %}
@@ -12,6 +12,7 @@ title: FayeA - Blog/Articles
 		{{ post.content }}	
 	{% endfor %}
 	
+	<hr />
 	
 	<h2>Recent Posts</h2>
 		<ul>
@@ -25,4 +26,4 @@ title: FayeA - Blog/Articles
 
 	<p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
 
-</article>
+
